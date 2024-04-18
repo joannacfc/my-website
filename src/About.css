@@ -1,0 +1,26 @@
+.About {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .headshot {
+    width: 240px;
+    height: auto;
+    margin-right: 40px;
+  }
+  
+  .text-container {
+    max-width: 40%;
+  }
+  
+  .text-container h2 {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #2B9348;
+  }
+  
+  .text-container p {
+    font-size: 10pt;
+    font-weight: normal;
+  }  

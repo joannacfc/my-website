@@ -1,0 +1,24 @@
+.MainPage {
+    display: flex;
+    align-items: center;
+  }
+  
+  .MainPage-content {
+    flex: 1;
+    padding: 40px;
+  }
+
+  .MainPage-video img {
+    border: none;
+  }
+  
+  .MainPage-content h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #2B9348;
+  }
+  
+  .MainPage-content p {
+    font-size: 12pt;
+    font-weight: normal;
+  }  
