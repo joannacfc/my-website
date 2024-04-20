@@ -14,9 +14,47 @@ async function resumeEducation() {
         
         return schools;
     } catch (error) {
-        console.error("Error fetching books:", error.message);
+        console.error("Error fetching education:", error.message);
         return [];
     }
 }
 
 export { resumeEducation };
+
+async function resumeWork() {
+    try {
+        let { data: works, error } = await supabase
+            .from('Resume_Work')
+            .select('*');
+        
+        if (error) {
+            throw new Error(error.message);
+        }
+        
+        return works;
+    } catch (error) {
+        console.error("Error fetching work experience:", error.message);
+        return [];
+    }
+}
+
+export { resumeWork };
+
+async function resumeSkills() {
+    try {
+        let { data: skills, error } = await supabase
+            .from('Resume_Skills')
+            .select('*');
+        
+        if (error) {
+            throw new Error(error.message);
+        }
+        
+        return skills;
+    } catch (error) {
+        console.error("Error fetching skills:", error.message);
+        return [];
+    }
+}
+
+export { resumeSkills };

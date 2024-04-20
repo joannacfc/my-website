@@ -3,3 +3,9 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: white;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}

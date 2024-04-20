@@ -1,8 +1,50 @@
-.university {
+.ResumeContainer {
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }  
+
+h3 {
+    margin-top: 40px;
+    font-size: 14pt;
+    color: #2B9348;
+}
+
+.university, .first-line {
     font-size: 12pt;
     font-weight: bold;
 }
 
-.degree, .period {
+.degree {
     font-size: 12pt;
 }
+
+.period {
+    font-size: 10pt;
+}
+
+.second-line {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+  }
+
+.hr-dotted {
+    border: none;
+    border-top: 1px dotted #999;
+    margin: 10px 0;
+}
+
+.first-line-skills {
+    font-size: 12pt;
+}
+
+.centered-button-container {
+    display: flex;
+    justify-content: center;
+}
+  
