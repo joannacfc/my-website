@@ -15,9 +15,9 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/" element={<MainPage />} /> {/* Route for the main page */}
+            <Route path="/" element={<MainPage />} />
           </Routes>
-          <Link to="/"> {/* Link to the main page */}
+          <Link to="/">
             <img src={logo} className="App-logo" alt="logo" />
           </Link>
         </header>
