@@ -21,7 +21,7 @@ function MainPage() {
       <Grid container spacing={1} alignItems="flex-start">
         <Grid item xs={12} sm={8} sx={{ flexBasis: '75%' }}>
           <div className="MainPage-video">
-            <img src={video_redesign} alt="Application Redesign" style={{ maxWidth: '100%', height: 'auto' }}/>
+            <img src={video_redesign} alt="Application Redesign" style={{ maxWidth: '120%', height: 'auto' }}/>
           </div>
         </Grid>
         <Grid item xs={12} sm={4} sx={{ flexBasis: '25%' }}>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { resumeEducation, resumeWork, resumeSkills } from './Supabase';
 import { Button, Typography, List, ListItem, ListItemText } from '@mui/material';
+import Chart from './Chart';
 
 function Resume() {
   const [schools, setSchools] = useState([]);
@@ -14,6 +15,7 @@ function Resume() {
       const worksData = await resumeWork();
       setWorks(worksData);
       const skillsData = await resumeSkills();
+      skillsData.sort((a, b) => a.id - b.id);
       setSkills(skillsData);
     }
 
@@ -76,13 +78,20 @@ function Resume() {
 
             return acc;
           }, []).map((skill, index) => (
-            <ListItem key={index}>
-              <ListItemText primary={skill.primary} secondary={skill.secondary} />
-            </ListItem>
+            <React.Fragment key={index}>
+              <ListItem>
+                <ListItemText primary={skill.primary} secondary={skill.secondary} />
+              </ListItem>
+              {skill.primary === 'Technical skills:' && (
+                <ListItem>
+                  <Chart />
+                </ListItem>
+              )}
+            </React.Fragment>
           ))}
         </List>
 
-        <div className="centered-button-container" style={{ marginTop: '1.2em', display: 'flex', justifyContent: 'center' }}>
+        <div className="centered-button-container" style={{ marginTop: '2em', display: 'flex', justifyContent: 'center' }}>
           <Button variant="contained" onClick={handleResumeButtonClick} style={{ backgroundColor: '#575761', color: 'white' }}>
             View Resume PDF
           </Button>
