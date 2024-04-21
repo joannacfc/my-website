@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Grid } from '@mui/material'; // Import Grid from Material-UI
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Legend } from 'chart.js';
 import { resumeSkills } from './Supabase';
@@ -59,9 +60,13 @@ const Chart = () => {
   };
 
   return (
-    <div style={{ width: '540px', height: '300px' }}>
-      <Bar options={options} data={data} />
-    </div>
+    <Grid container>
+      <Grid item xs={12} md={8} lg={6}>
+        <div style={{ width: '550px', height: '100%' }}>
+          <Bar options={{ ...options, maintainAspectRatio: false }} data={data} /> {/* Adjust maintainAspectRatio */}
+        </div>
+      </Grid>
+    </Grid>
   );
 };
 

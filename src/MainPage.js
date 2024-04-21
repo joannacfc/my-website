@@ -19,12 +19,12 @@ function MainPage() {
   return (
     <div className="MainPage" style={{ paddingLeft: '4rem', paddingRight: '4rem', marginTop: '4em', marginBottom: '6em', marginLeft: 'auto', marginRight: 'auto', maxWidth: '960px' }}>
       <Grid container spacing={1} alignItems="flex-start">
-        <Grid item xs={12} sm={8} sx={{ flexBasis: '75%' }}>
+        <Grid item xs={12} sm={8} sx={{ flexBasis: '100%' }}>
           <div className="MainPage-video">
-            <img src={video_redesign} alt="Application Redesign" style={{ maxWidth: '120%', height: 'auto' }}/>
+            <img src={video_redesign} alt="Application Redesign" style={{ maxWidth: '100%', height: 'auto' }}/>
           </div>
         </Grid>
-        <Grid item xs={12} sm={4} sx={{ flexBasis: '25%' }}>
+        <Grid item xs={12} sm={4} sx={{ flexBasis: '20%' }}>
           <div className="MainPage-content" style={{ marginTop: '2em'}}>
             <Link to="/Portfolio1" style={{ textDecoration: 'none' }}>
               <h2 style={{ fontSize: '1.6rem', color: color }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Application Redesign</h2>
