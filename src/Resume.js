@@ -26,7 +26,7 @@ function Resume() {
 
   return (
     <div className="ResumeContainer">
-      <div className="Resume" style={{ paddingLeft: '4rem', paddingRight: '4rem', marginTop: '4em', marginBottom: '4em' }}>
+      <div className="Resume" style={{ paddingLeft: '4rem', paddingRight: '4rem', marginTop: '5em', marginBottom: '6em' }}>
         {/* EDUCATION SECTION */}
         <Typography variant="h6" style={{ color: '#2B9348', marginTop: '0.8em' }} gutterBottom>EDUCATION</Typography>
         <List>

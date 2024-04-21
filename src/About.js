@@ -5,7 +5,7 @@ function About() {
 
   return (
     <div className="bg-gray-100 p-8">
-      <div style={{ paddingLeft: '4rem', paddingRight: '4rem', marginTop: '3em', marginBottom: '3em', marginLeft: 'auto', marginRight: 'auto', maxWidth: '800px' }}>
+      <div style={{ paddingLeft: '4rem', paddingRight: '4rem', marginTop: '5em', marginBottom: '6em', marginLeft: 'auto', marginRight: 'auto', maxWidth: '800px' }}>
         <Grid container spacing={3} alignItems="center">
           <Grid item xs={12} sm={6} style={{ display: 'flex', justifyContent: 'center' }}>
             <img src={headshotUrl} alt="Joanna Chang" style={{ maxWidth: '80%', height: 'auto' }} />
